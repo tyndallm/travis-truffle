@@ -1,0 +1,24 @@
+{
+  "name": "travis-truffle",
+  "version": "1.0.0",
+  "description": "Test project to experiemnt with Trufflejs and TravisCI",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "truffle": "node ./node_modules/truffle/cli.js",
+    "test": "npm run truffle -- test --network test",
+    "test-server": "./node_modules/.bin/testrpc -p 6545 --verbose",
+    "test-server-attach": "geth attach http://localhost:6545",
+    "develop": "node ./scripts/watch-tests.js"
+  },
+  "author": "matt.tyndall@consensys.net",
+  "license": "ISC",
+  "devDependencies": {
+    "ethereumjs-testrpc": "^4.0.1",
+    "truffle": "^3.4.4",
+    "truffle-compile": "^2.0.3",
+    "truffle-contract": "^2.0.1"
+  }
+}
