@@ -15,6 +15,10 @@
   },
   "author": "matt.tyndall@consensys.net",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyndallm/travis-truffle.git"
+  },
   "devDependencies": {
     "ethereumjs-testrpc": "^4.0.1",
     "truffle": "^3.4.4",
