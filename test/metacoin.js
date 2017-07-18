@@ -60,4 +60,7 @@ contract('MetaCoin', function(accounts) {
       assert.equal(account_two_ending_balance, account_two_starting_balance + amount, "Amount wasn't correctly sent to the receiver");
     });
   });
+  it("should return true", function() {
+    assert.equal(true, true, "This must return true");
+  });
 });
